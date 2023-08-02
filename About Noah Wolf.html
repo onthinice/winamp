@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="app"></div>
     <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
     <script>
         const Webamp = window.Webamp, webamp = new Webamp({
@@ -11,10 +15,6 @@
     		initialSkin: { url: './Mac_OS_X_-_Aqua.wsz' },
         });
         webamp.renderWhenReady(document.getElementById('app'));
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <div id="app"></div>
+    </script>    
   </body>
 </html>
