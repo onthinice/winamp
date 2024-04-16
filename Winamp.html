@@ -1,1 +1,40 @@
-
+<!DOCTYPE html><html lang="en"><head>
+	<body style="                         
+		background-color: black;"> <br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    </script> 
+    <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+  <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
+<script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
+<script>
+        
+      const Webamp = window.Webamp, webamp = new Webamp({
+      initialTracks: [{
+                metaData: {
+                    artist: "Noah Wolf",
+                    title: "Old You (Never Released)"
+                },
+                url: "https://audio.jukehost.co.uk/qpE87EiJwpVMohqJS5Q564C0L9U99sq8",
+                duration: 120.12
+            }],
+      __butterchurnOptions: {
+	importButterchurn: () => Promise.resolve(window.butterchurn),
+	getPresets: () => {
+	    const presets = window.butterchurnPresets.getPresets();
+	    return Object.keys(presets).map((name) => {
+		return {
+		    name,
+		    butterchurnPresetObject: presets[name]
+		};
+	    });
+	},
+	butterchurnOpen: true
+	},
+      initialSkin: { url: './Mac_OS_X_-_Aqua.wsz' },
+      });
+      webamp.renderWhenReady(document.body);
+	
+    </script>  
+</body></html>
